@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "imgUrl": "placeholder-carousel.png",
+      "altText": ""
+    },
+    {
+      "imgUrl": "placeholder-carousel.png",
+      "altText": ""
+    },
+    {
+      "imgUrl": "placeholder-carousel.png",
+      "altText": ""
+    },
+    {
+      "imgUrl": "placeholder-carousel.png",
+      "altText": ""
+    }
+  ],
+  "autoplaySecondsDelay": 5
+}

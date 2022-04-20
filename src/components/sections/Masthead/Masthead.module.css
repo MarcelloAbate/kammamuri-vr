@@ -1,0 +1,19 @@
+.root {
+  @apply min-h-screen flex flex-col items-center justify-center relative;
+}
+
+.title {
+  @apply font-bold text-4xl xl:text-5xl;
+}
+
+.subtitle {
+  @apply absolute bottom-16 text-base xl:text-lg max-w-5xl px-8 lg:px-0;
+}
+
+.overlay {
+  @apply text-white drop-shadow-md text-center absolute inset-0 bg-black bg-opacity-10 z-10 flex-1 flex items-center justify-center;
+}
+
+.video {
+  @apply absolute inset-0 w-full h-full object-cover;
+}

@@ -1,0 +1,15 @@
+.root {
+  @apply flex flex-wrap text-center;
+}
+
+.feature {
+  @apply p-8 text-white space-y-8 h-96;
+}
+
+.feature-icon {
+  @apply w-16 h-16 inline;
+}
+
+.feature-title {
+  @apply font-bold text-lg;
+}

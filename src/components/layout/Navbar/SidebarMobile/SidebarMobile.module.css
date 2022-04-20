@@ -1,0 +1,47 @@
+.root {
+  @apply fixed inset-0 flex z-[999] lg:hidden;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-black bg-opacity-75 lg:hidden;
+}
+
+.content-wrapper {
+  @apply relative flex-1 flex flex-col max-w-sm w-full bg-[#191b1e] overflow-y-scroll px-10 py-6;
+}
+
+.social-nav {
+  @apply border-t border-white border-opacity-10 pt-6 mt-[100px];
+}
+
+.header {
+  @apply border-b border-white border-opacity-10 pb-6;
+}
+
+.header > div {
+  @apply flex justify-between items-center;
+}
+
+.header p {
+  @apply leading-8 mt-6 pr-[7%];
+}
+
+.nav {
+  @apply mt-5 space-y-4 mt-6;
+}
+
+.social-nav > span {
+  @apply text-[14px] uppercase tracking-[2px]  inline-block mb-5;
+}
+
+.social-nav ul {
+  @apply flex space-x-4;
+}
+
+.close-button button {
+  @apply w-11 h-11 flex items-center justify-center rounded-full;
+}
+
+.close-button svg {
+  @apply w-[23px] h-auto;
+}

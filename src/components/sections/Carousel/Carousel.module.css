@@ -1,0 +1,7 @@
+.root {
+  @apply h-[620px];
+}
+
+.slide {
+  @apply w-full h-full object-cover;
+}

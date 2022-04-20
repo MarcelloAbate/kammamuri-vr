@@ -1,0 +1,7 @@
+.root {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+
+.logo {
+  @apply mb-[35px];
+}

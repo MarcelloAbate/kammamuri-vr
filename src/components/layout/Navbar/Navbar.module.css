@@ -1,0 +1,46 @@
+.root {
+  @apply absolute top-0 w-full z-50 duration-300 px-8 h-20 md:h-24 flex flex-col justify-center;
+}
+
+.scrolled-root {
+  @apply !fixed bg-black bg-opacity-60 transition-shadow backdrop-blur-lg;
+
+  animation: translate 300ms ease-in-out;
+}
+
+@keyframes translate {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.inner-root {
+  @apply max-w-7xl mx-auto w-full flex items-center justify-between;
+}
+
+.logo {
+  @apply col-span-6 lg:col-span-2 h-10 w-10 lg:h-14 lg:w-14;
+}
+
+.nav {
+  @apply hidden lg:block col-span-6 lg:col-span-10;
+}
+
+.nav-list {
+  @apply flex justify-end items-center space-x-8;
+}
+
+.nav-item {
+  @apply uppercase text-white text-sm transition relative;
+}
+
+.mobile-button {
+  @apply justify-end items-center flex lg:hidden;
+}
+
+.sidebar-icon {
+  @apply h-8 w-8 text-white;
+}
