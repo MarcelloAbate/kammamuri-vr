@@ -1,9 +1,9 @@
 .root {
-  @apply flex flex-wrap text-center;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center;
 }
 
 .feature {
-  @apply p-8 text-white space-y-8 h-96;
+  @apply p-20 text-white space-y-6;
 }
 
 .feature-icon {

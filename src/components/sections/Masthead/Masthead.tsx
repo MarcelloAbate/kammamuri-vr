@@ -9,15 +9,18 @@ const Masthead: React.FC<MastheadProps> = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={s.root}>
+    <>
       <video className={s.video} autoPlay muted loop playsInline>
-        <source src="header-video.mov" />
+        <source src="videos/bokeh_blue.mp4" type="video/mp4" />
+        <source src="videos/bokeh_blue.webm" type="video/webm" />
       </video>
-      <div className={s.overlay}>
-        <h1 className={s.title}>{t("header-title")}</h1>
-        <h2 className={s.subtitle}>{t("header-subtitle")}</h2>
-      </div>
-    </div>
+      <header className={s.root}>
+        <div className={s.overlay}>
+          <h1 className={s.title}>{t("header-title")}</h1>
+          <h2 className={s.subtitle}>{t("header-subtitle")}</h2>
+        </div>
+      </header>
+    </>
   );
 };
 

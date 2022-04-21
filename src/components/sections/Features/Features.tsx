@@ -10,7 +10,7 @@ interface FeaturesProps {
 
 const Features: React.FC<FeaturesProps> = () => {
   return (
-    <div className={s.root}>
+    <section className={s.root}>
       {features.map((feature, i) => (
         <Feature
           Icon={feature.Icon}
@@ -20,7 +20,7 @@ const Features: React.FC<FeaturesProps> = () => {
           backgroundColor={feature.backgroundColor}
         />
       ))}
-    </div>
+    </section>
   );
 };
 
@@ -35,10 +35,7 @@ interface FeatureProps {
 const Feature: React.FC<FeatureProps> = ({ Icon, number, title, description, backgroundColor }) => {
   const { t } = useTranslation();
 
-  const className = cn(s.feature, {
-    "w-full sm:w-[50%] lg:w-[33%]  ": number <= 2,
-    "w-full sm:w-[50%]": number >= 3,
-  });
+  const className = cn(s.feature);
 
   return (
     <div style={{ backgroundColor }} className={className}>

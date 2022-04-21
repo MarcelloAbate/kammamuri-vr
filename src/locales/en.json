@@ -1,0 +1,35 @@
+{
+  "header-title": "TITLE",
+  "header-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ",
+
+  "feature-cash-title": "CASH TITLE",
+  "feature-cash-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "feature-fire-title": "FIRE TITLE",
+  "feature-fire-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "feature-briefcase-title": "BRIEFCASE TITLE",
+  "feature-briefcase-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "feature-cake-title": "CAKE TITLE",
+  "feature-cake-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "feature-clipboard-list-title": "CLIPBOARD LIST TITLE",
+  "feature-clipboard-list-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "feature-clipboard-eye-title": "CLIPBOARD EYE TITLE",
+  "feature-clipboard-eye-subtitle": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+
+  "get-in-touch-title": "Get in touch!",
+  "get-in-touch-paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "get-in-touch-name-label": "First Name",
+  "get-in-touch-name-placeholder": "John",
+  "get-in-touch-last-name-label": "Last Name",
+  "get-in-touch-last-name-placeholder": "Doe",
+  "get-in-touch-email-label": "Email",
+  "get-in-touch-email-placeholder": "e.g, name@example.com",
+  "get-in-touch-code-label": "Code",
+  "get-in-touch-phone-label": "Phone",
+  "get-in-touch-phone-placeholder": "Phone",
+  "get-in-touch-company-label": "Company",
+  "get-in-touch-company-placeholder": "Company",
+  "get-in-touch-message-label": "Your Message",
+  "get-in-touch-message-placeholder": "Your Message",
+
+  "alt-text-carousel-1": "island photo"
+}
