@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import phoneCodes from "../../../constants/phoneCodes";
 import Container from "../../layout/Container";
+import Button from "../../ui/Button";
 import SelectInput from "../../ui/SelectInput";
 import Textarea from "../../ui/Textarea";
 import TextInput from "../../ui/TextInput";
@@ -113,6 +114,8 @@ const GetInTouch: React.FC<GetInTouchProps> = () => {
             onChange={handleChange}
             rows={4}
           />
+
+          <Button>{t("get-in-touch-submit-button")}</Button>
         </form>
       </Container>
     </section>

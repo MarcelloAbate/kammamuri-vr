@@ -1,5 +1,5 @@
 .root {
-  @apply lg:grid grid-cols-3 space-y-8 lg:space-y-0 py-12 bg-white gap-x-12;
+  @apply lg:grid grid-cols-3 space-y-8 lg:space-y-0 py-16 bg-white gap-x-12;
 }
 
 .form {
