@@ -21,10 +21,13 @@ const SelectInput: React.FC<SelectInputProps> = ({
   selectClassName,
   id,
   required,
-  value,
   ...props
 }) => {
-  const labelCn = cn(s.label, labelClassName, { [s.required]: required });
+  const labelCn = cn(s.label, labelClassName);
+  const selectCn = cn(
+    selectClassName,
+    "block w-full border-0 border-b border-transparent bg-gray-50 focus:border-primary focus:ring-0 sm:text-sm"
+  );
 
   return (
     <div className={className}>
@@ -35,9 +38,9 @@ const SelectInput: React.FC<SelectInputProps> = ({
       )}
 
       <div className={s["input-wrapper"]}>
-        <select id={id} className={selectClassName} required={required} {...props}>
+        <select id={id} className={selectCn} required={required} {...props}>
           {selectOptions.map((selectOption, i) => (
-            <option key={i} value={selectOption.value} selected={value === selectOption.value}>
+            <option key={i} value={selectOption.value}>
               {selectOption.label}
             </option>
           ))}

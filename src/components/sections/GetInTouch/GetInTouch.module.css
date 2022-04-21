@@ -1,7 +1,15 @@
 .root {
-  @apply lg:grid grid-cols-3 space-y-8 lg:space-y-0 mt-8;
+  @apply lg:grid grid-cols-3 space-y-8 lg:space-y-0 py-12 bg-white gap-x-12;
 }
 
 .form {
   @apply col-span-2 grid grid-cols-4 grid-rows-6 gap-6;
+}
+
+.title {
+  @apply text-primary font-bold text-2xl;
+}
+
+.paragraph {
+  @apply text-lg mt-8 text-gray-500;
 }

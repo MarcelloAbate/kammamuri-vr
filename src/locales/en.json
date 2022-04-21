@@ -31,5 +31,8 @@
   "get-in-touch-message-label": "Your Message",
   "get-in-touch-message-placeholder": "Your Message",
 
-  "alt-text-carousel-1": "island photo"
+  "alt-text-carousel-1": "island photo",
+
+  "footer-paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum",
+  "footer-bottom": "Ⓒ 2022 Kammamuri VR"
 }

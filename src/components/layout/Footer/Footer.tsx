@@ -1,19 +1,47 @@
 import { FC } from "react";
-import cn from "classnames";
 import s from "./Footer.module.css";
+import Container from "../Container";
+import footer from "../../../config/footer.json";
+import { useTranslation } from "react-i18next";
 
-interface Props {
-  className?: string;
-}
+interface FooterProps {}
 
-const Footer: FC<Props> = ({ className }) => {
-  const rootClassName = cn(s.root, className);
+const Footer: FC<FooterProps> = () => {
+  const { t } = useTranslation();
 
   return (
-    <footer id="footer" className={rootClassName}>
-      <div className={s.logo}>
-        <span>{/* Logo */}</span>
-      </div>
+    <footer className="bg-white py-16" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <Container>
+        <div className={s.root}>
+          <div className={s.side}>
+            <img className={s.logo} src="logo.png" alt="Logo" />
+            <p className={s.paragraph}>{t("footer-paragraph")}</p>
+          </div>
+
+          <div className={s.sections}>
+            {footer.map((section) => (
+              <div key={section.title} className={s.section}>
+                <h3 className={s["section-title"]}>{section.title}</h3>
+                <ul className="mt-4 space-y-4">
+                  {section.links.map((link) => (
+                    <li>
+                      <a href={link.href} className={s.link}>
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-12 border-t border-gray-200 pt-8">
+          <p className="text-base text-gray-400 xl:text-center">{t("footer-bottom")}</p>
+        </div>
+      </Container>
     </footer>
   );
 };

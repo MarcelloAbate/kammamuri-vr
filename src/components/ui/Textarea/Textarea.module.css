@@ -1,0 +1,7 @@
+.label {
+  @apply block text-xs;
+}
+
+.textarea-wrapper {
+  @apply mt-1 border-b border-gray-300 focus-within:border-primary;
+}

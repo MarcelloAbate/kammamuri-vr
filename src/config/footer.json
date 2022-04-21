@@ -1,1 +1,42 @@
-{}
+[
+  {
+    "title": "Follow us",
+    "links": [
+      {
+        "name": "Youtube",
+        "href": "#",
+        "external": true
+      },
+      {
+        "name": "Linkedin",
+        "href": "#",
+        "external": true
+      },
+      {
+        "name": "Steam",
+        "href": "#",
+        "external": true
+      }
+    ]
+  },
+  {
+    "title": "Contact us",
+    "links": [
+      {
+        "name": "info@test.com",
+        "href": "#",
+        "external": false
+      },
+      {
+        "name": "+39 333 3333333",
+        "href": "#",
+        "external": false
+      },
+      {
+        "name": "Malta",
+        "href": "#",
+        "external": false
+      }
+    ]
+  }
+]

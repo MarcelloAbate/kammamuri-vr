@@ -5,6 +5,7 @@ import Carousel from "../components/sections/Carousel";
 import Footer from "../components/layout/Footer";
 import Features from "../components/sections/Features";
 import GetInTouch from "../components/sections/GetInTouch";
+import ProductVideo from "../components/sections/ProductVideo";
 
 type LandingPageProps = {
   children?: React.ReactNode;
@@ -15,6 +16,7 @@ const LandingPage: React.FC<LandingPageProps> = () => {
     <>
       <Navbar />
       <Masthead />
+      <ProductVideo />
       <Carousel />
       <Features />
       <GetInTouch />

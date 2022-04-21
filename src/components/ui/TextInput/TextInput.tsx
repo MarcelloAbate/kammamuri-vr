@@ -16,7 +16,11 @@ const TextInput: React.FC<TextInputProps> = ({
   required,
   ...props
 }) => {
-  const labelCn = cn(s.label, labelClassName, { [s.required]: required });
+  const labelCn = cn(s.label, labelClassName);
+  const inputCn = cn(
+    inputClassName,
+    "block w-full border-0 border-b border-transparent bg-gray-50 focus:border-primary focus:ring-0 sm:text-sm"
+  );
 
   return (
     <div className={className}>
@@ -27,7 +31,7 @@ const TextInput: React.FC<TextInputProps> = ({
       )}
 
       <div className={s["input-wrapper"]}>
-        <input type="text" id={id} className={inputClassName} required={required} {...props} />
+        <input type="text" id={id} className={inputCn} required={required} {...props} />
       </div>
     </div>
   );

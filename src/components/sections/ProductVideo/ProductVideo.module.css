@@ -1,0 +1,7 @@
+.root {
+  @apply min-h-screen w-full relative;
+}
+
+.video {
+  @apply absolute inset-0 object-cover w-full h-full object-cover;
+}
