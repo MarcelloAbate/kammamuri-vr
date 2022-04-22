@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "imgUrl": "/images/Education.png",
+      "altText": "alt-text-carousel-1"
+    },
+    {
+      "imgUrl": "/images/P.A..png",
+      "altText": "alt-text-carousel-1"
+    },
+    {
+      "imgUrl": "/images/Retail.png",
+      "altText": "alt-text-carousel-1"
+    },
+    {
+      "imgUrl": "/images/Sports.png",
+      "altText": "alt-text-carousel-1"
+    },
+    {
+      "imgUrl": "/images/Tourism.png",
+      "altText": "alt-text-carousel-1"
+    }
+  ],
+  "autoplaySecondsDelay": 5
+}

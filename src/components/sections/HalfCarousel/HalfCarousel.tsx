@@ -2,8 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import s from "./HalfCarousel.module.css";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import { useTranslation } from "react-i18next";
-import Section from "../../layout/Section";
-import config from "../../../config/carousel.json";
+import config from "../../../config/half-carousel.json";
 import Container from "../../layout/Container";
 
 interface HalfCarouselProps {
@@ -27,7 +26,7 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
       </Container>
       <div className={s.carousel}>
         <Swiper
-          className="object-cover h-[620px]"
+          className="h-[620px]"
           modules={[Navigation, Pagination, A11y, Autoplay]}
           navigation
           pagination={{ clickable: true }}
