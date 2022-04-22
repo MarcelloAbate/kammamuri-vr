@@ -1,42 +1,49 @@
-import { CashIcon, FireIcon, BriefcaseIcon, CakeIcon, ClipboardListIcon, EyeIcon } from "@heroicons/react/outline";
+import {
+  GlobeIcon,
+  ShoppingCartIcon,
+  ThumbUpIcon,
+  FilmIcon,
+  PresentationChartBarIcon,
+  PuzzleIcon,
+} from "@heroicons/react/outline";
 
 // Choose icon from: https://heroicons.com/
 // Insert i18n's key of title and subtitle of each feature in assets/locales/*
 const features = [
   {
-    Icon: CashIcon,
-    title: "feature-cash-title",
-    description: "feature-cash-subtitle",
+    Icon: GlobeIcon,
+    title: "feature-metaverse-world-title",
+    description: "feature-metaverse-world-subtitle",
     backgroundColor: "#399a99",
   },
   {
-    Icon: FireIcon,
-    title: "feature-fire-title",
-    description: "feature-fire-subtitle",
+    Icon: ShoppingCartIcon,
+    title: "feature-virtual-shop-title",
+    description: "feature-virtual-shop-subtitle",
     backgroundColor: "#238f8e",
   },
   {
-    Icon: BriefcaseIcon,
-    title: "feature-briefcase-title",
-    description: "feature-briefcase-subtitle",
+    Icon: ThumbUpIcon,
+    title: "feature-interactive-museum-title",
+    description: "feature-interactive-museum-subtitle",
     backgroundColor: "#208180",
   },
   {
-    Icon: CakeIcon,
-    title: "feature-cake-title",
-    description: "feature-cake-subtitle",
+    Icon: FilmIcon,
+    title: "feature-media-center-title",
+    description: "feature-media-center-subtitle",
     backgroundColor: "#1c7272",
   },
   {
-    Icon: ClipboardListIcon,
-    title: "feature-clipboard-list-title",
-    description: "feature-clipboard-list-subtitle",
+    Icon: PresentationChartBarIcon,
+    title: "feature-analytycs-dashboard-title",
+    description: "feature-analytycs-dashboard-subtitle",
     backgroundColor: "#196463",
   },
   {
-    Icon: EyeIcon,
-    title: "feature-clipboard-eye-title",
-    description: "feature-clipboard-eye-subtitle",
+    Icon: PuzzleIcon,
+    title: "feature-mini-games-title",
+    description: "feature-mini-games-subtitle",
     backgroundColor: "#155655",
   },
 ];
