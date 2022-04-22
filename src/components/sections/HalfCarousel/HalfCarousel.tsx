@@ -16,12 +16,8 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
     <section id="k-verse" className={s.root}>
       <Container>
         <div className={s.side}>
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus dignissimos deleniti laudantium.
-            Cupiditate tenetur maiores excepturi obcaecati ratione eligendi. Natus, possimus? Blanditiis consectetur
-            ipsum eaque laudantium aliquam ea inventore?
-          </p>
+          <h3>{t("half-carousel-title")}</h3>
+          <p>{t("half-carousel-paragraph")}</p>
         </div>
       </Container>
       <div className={s.carousel}>

@@ -11,7 +11,7 @@
 }
 
 .side p {
-  @apply mt-4 text-lg text-gray-500;
+  @apply mt-4 text-lg text-gray-500 whitespace-pre-line;
 }
 
 .carousel {
