@@ -1,28 +1,26 @@
 import Container from "../Container";
-import cn from "classnames";
 import { FC } from "react";
 import s from "./Section.module.css";
 
 interface SectionProps {
   children?: React.ReactNode;
   title?: string;
-  subtitle?: string;
   className?: string;
   animationOnScroll?: boolean;
   id?: string;
+  clean?: boolean;
 }
 
-const Section: FC<SectionProps> = ({ id = "", title, subtitle, className = "", children }) => (
-  <section id={id} className={cn(s.root, s.separator, className)}>
-    <Container>
-      {title && subtitle && (
+const Section: FC<SectionProps> = ({ id = "", title, className = "", clean = false, children }) => (
+  <section id={id} className="bg-white">
+    <Container clean={clean} className={s.root}>
+      {title && (
         <div>
-          <span className={s.subtitle}>{subtitle}</span>
-          <h4 className={s.title}>{title}</h4>
+          <h2 className={s.title}>{title}</h2>
         </div>
       )}
 
-      <div>{children}</div>
+      <div className={className}>{children}</div>
     </Container>
   </section>
 );

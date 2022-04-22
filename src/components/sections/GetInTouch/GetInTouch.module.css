@@ -1,5 +1,9 @@
 .root {
-  @apply lg:grid grid-cols-3 space-y-8 lg:space-y-0 py-16 bg-white gap-x-12;
+  @apply lg:grid grid-cols-3 space-y-8 lg:space-y-0 py-12 bg-white gap-x-12;
+}
+
+.side {
+  @apply border-l-4 border-primary pl-4;
 }
 
 .form {
@@ -11,5 +15,5 @@
 }
 
 .paragraph {
-  @apply text-lg mt-8 text-gray-500;
+  @apply text-lg lg:mt-4 text-gray-500;
 }

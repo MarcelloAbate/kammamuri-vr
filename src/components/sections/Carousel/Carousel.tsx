@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import s from "./Carousel.module.css";
 import config from "../../../config/carousel.json";
 import { useTranslation } from "react-i18next";
+// import Section from "../../layout/Section";
 
 interface CarouselProps {
   children?: React.ReactNode;

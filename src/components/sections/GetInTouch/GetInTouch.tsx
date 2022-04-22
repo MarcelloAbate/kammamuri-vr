@@ -38,9 +38,11 @@ const GetInTouch: React.FC<GetInTouchProps> = () => {
   return (
     <section className="bg-white">
       <Container className={s.root}>
-        <div className={s.side}>
-          <h3 className={s.title}>{t("get-in-touch-title")}</h3>
-          <p className={s.paragraph}>{t("get-in-touch-paragraph")}</p>
+        <div>
+          <div className={s.side}>
+            <h3 className={s.title}>{t("get-in-touch-title")}</h3>
+            <p className={s.paragraph}>{t("get-in-touch-paragraph")}</p>
+          </div>
         </div>
         <form className={s.form} onSubmit={handleSubmit}>
           <TextInput
