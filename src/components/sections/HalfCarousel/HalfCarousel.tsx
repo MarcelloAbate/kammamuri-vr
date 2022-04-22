@@ -13,7 +13,7 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
   const { t } = useTranslation();
 
   return (
-    <section className={s.root}>
+    <section id="k-verse" className={s.root}>
       <Container>
         <div className={s.side}>
           <h3>Lorem, ipsum dolor.</h3>

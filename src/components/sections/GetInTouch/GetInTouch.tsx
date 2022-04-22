@@ -36,7 +36,7 @@ const GetInTouch: React.FC<GetInTouchProps> = () => {
   };
 
   return (
-    <section className="bg-white">
+    <section id="contact-us" className="bg-white">
       <Container className={s.root}>
         <div>
           <div className={s.side}>

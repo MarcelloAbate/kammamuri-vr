@@ -34,7 +34,7 @@
 }
 
 .nav-item {
-  @apply uppercase text-white text-sm transition relative;
+  @apply uppercase text-white font-medium transition-colors hover:text-primary relative;
 }
 
 .mobile-button {

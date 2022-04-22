@@ -14,7 +14,7 @@ const Carousel: React.FC<CarouselProps> = () => {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <section id="turtle-island">
       <div className="bg-primary py-4">
         <Container>
           <h2 className="text-white text-3xl font-bold border-l-4 border-white pl-4">Carousel</h2>

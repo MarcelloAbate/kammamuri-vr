@@ -5,6 +5,10 @@ module.exports = {
       colors: {
         primary: "#238f8e",
       },
+
+      fontFamily: {
+        primary: ['"Rajdhani"', "sans-serif"],
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

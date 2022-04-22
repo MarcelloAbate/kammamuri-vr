@@ -6,7 +6,7 @@ interface ProductVideoProps {
 
 const ProductVideo: React.FC<ProductVideoProps> = () => {
   return (
-    <section className={s.root}>
+    <section id="turtle-island" className={s.root}>
       <video className={s.video} autoPlay muted loop playsInline>
         <source src="videos/kammamuri-vr-video.mp4" type="video/mp4" />
         <source src="videos/kammamuri-vr-video.webm" type="video/webm" />

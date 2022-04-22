@@ -4,17 +4,7 @@ import NavbarRoot from "./NavbarRoot";
 import cn from "classnames";
 import SidebarMobile from "./SidebarMobile";
 import { MenuIcon } from "@heroicons/react/outline";
-
-const navList = [
-  { title: "Test-1", href: "#Test-1" },
-  { title: "Test-2", href: "#Test-2" },
-  { title: "Test-3", href: "#Test-3" },
-  { title: "Test-4", href: "#Test-4" },
-  { title: "Test-5", href: "#Test-5" },
-  { title: "Test-6", href: "#Test-6" },
-  { title: "Test-7", href: "#Test-7" },
-  { title: "Test-8", href: "#Test-8" },
-];
+import navList from "../../../config/navbar.json";
 
 const Navbar: FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
