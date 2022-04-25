@@ -26,8 +26,8 @@ const Footer: FC<FooterProps> = () => {
               <div key={section.title} className={s.section}>
                 <h3 className={s["section-title"]}>{section.title}</h3>
                 <ul className="mt-4 space-y-4">
-                  {section.links.map((link) => (
-                    <li>
+                  {section.links.map((link, i) => (
+                    <li key={i}>
                       <a href={link.href} className={s.link}>
                         {link.name}
                       </a>

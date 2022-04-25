@@ -13,6 +13,7 @@ const Features: React.FC<FeaturesProps> = () => {
     <section className={s.root}>
       {features.map((feature, i) => (
         <Feature
+          key={i}
           Icon={feature.Icon}
           number={i}
           title={feature.title}

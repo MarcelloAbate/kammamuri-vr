@@ -11,13 +11,21 @@ const Masthead: React.FC<MastheadProps> = () => {
   const { t } = useTranslation();
   const [isQuoteVisible, setIsQuoteVisible] = React.useState(false);
   const timeout = React.useRef<NodeJS.Timeout | null>(null);
+  const repeatTimeout = React.useRef<NodeJS.Timeout | null>(null);
 
   React.useEffect(() => {
-    const showQuote = () => {
-      setIsQuoteVisible(true);
+    const restartAnimation = () => {
+      setIsQuoteVisible(false);
+      const showQuote = () => {
+        setIsQuoteVisible(true);
+      };
+      timeout.current = setTimeout(showQuote, 6200);
+      repeatTimeout.current = setTimeout(restartAnimation, 16000);
     };
-    timeout.current = setTimeout(showQuote, 6200);
+
+    restartAnimation();
     return () => {
+      repeatTimeout.current && clearTimeout(repeatTimeout.current);
       timeout.current && clearTimeout(timeout.current);
     };
   }, []);

@@ -32,7 +32,7 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
           }}
         >
           {config.images.map((slide, i) => (
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <img className={s.slide} src={slide.imgUrl} alt={t(slide.altText)} />
             </SwiperSlide>
           ))}
