@@ -7,7 +7,7 @@
 }
 
 .phrases {
-  @apply text-lg text-primary-600 font-semibold uppercase pt-8 pb-12;
+  @apply text-4xl text-primary-600 font-semibold uppercase pt-8 pb-12;
 }
 
 .business-pre {

@@ -1,5 +1,5 @@
 .root {
-  @apply pt-12 bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center;
+  @apply pt-20 bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center;
 }
 
 .feature {
@@ -11,5 +11,5 @@
 }
 
 .feature-title {
-  @apply font-bold text-lg;
+  @apply font-semibold text-2xl;
 }
