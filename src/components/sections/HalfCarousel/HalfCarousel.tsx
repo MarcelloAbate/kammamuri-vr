@@ -25,7 +25,7 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
   return (
     <section id="k-verse" className={s.root}>
       <Container>
-        <div>
+        <div className={s.phrases}>
           <TextTransition text={phrasesText} />
         </div>
         <div className={s.side}>
@@ -34,8 +34,10 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
           <p>{t("half-carousel-paragraph")}</p>
         </div>
         <div>
-          {t("half-carousel-business")}
-          <TextTransition inline text={companyText} customIndex={businessTextIndex} />
+          <div className={s["business-pre"]}>{t("half-carousel-business")}</div>
+          <div className={s.business}>
+            <TextTransition text={companyText} customIndex={businessTextIndex} />
+          </div>
         </div>
       </Container>
 

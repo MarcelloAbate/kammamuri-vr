@@ -1,5 +1,5 @@
 .root {
-  @apply h-[620px];
+  @apply h-[620px] pb-12 bg-white;
 }
 
 .slide {
