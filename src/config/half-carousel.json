@@ -2,24 +2,30 @@
   "images": [
     {
       "imgUrl": "/images/Education.png",
-      "altText": "alt-text-carousel-1"
+      "altText": "alt-text-carousel-1",
+      "business": "half-carousel-business-education"
     },
     {
       "imgUrl": "/images/P.A..png",
-      "altText": "alt-text-carousel-1"
+      "altText": "alt-text-carousel-1",
+      "business": "half-carousel-business-public-administration"
     },
     {
       "imgUrl": "/images/Retail.png",
-      "altText": "alt-text-carousel-1"
+      "altText": "alt-text-carousel-1",
+      "business": "half-carousel-business-retail"
     },
     {
       "imgUrl": "/images/Sports.png",
-      "altText": "alt-text-carousel-1"
+      "altText": "alt-text-carousel-1",
+      "business": "half-carousel-business-sports"
     },
     {
       "imgUrl": "/images/Tourism.png",
-      "altText": "alt-text-carousel-1"
+      "altText": "alt-text-carousel-1",
+      "business": "half-carousel-business-tourism"
     }
   ],
+  "phrases": ["half-carousel-phrase-1", "half-carousel-phrase-2", "half-carousel-phrase-3"],
   "autoplaySecondsDelay": 5
 }

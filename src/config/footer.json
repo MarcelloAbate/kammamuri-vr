@@ -3,17 +3,22 @@
     "title": "Follow us",
     "links": [
       {
-        "name": "Youtube",
+        "name": "Facebook",
+        "href": "#",
+        "external": true
+      },
+      {
+        "name": "Instagram",
+        "href": "#",
+        "external": true
+      },
+      {
+        "name": "Twitch",
         "href": "#",
         "external": true
       },
       {
         "name": "Linkedin",
-        "href": "#",
-        "external": true
-      },
-      {
-        "name": "Steam",
         "href": "#",
         "external": true
       }
@@ -23,18 +28,13 @@
     "title": "Contact us",
     "links": [
       {
-        "name": "info@test.com",
-        "href": "#",
+        "name": "marcello.abate@kammamurivr.com",
+        "href": "mailto:marcello.abate@kammamurivr.com",
         "external": false
       },
       {
-        "name": "+39 333 3333333",
-        "href": "#",
-        "external": false
-      },
-      {
-        "name": "Malta",
-        "href": "#",
+        "name": "+353 838087566",
+        "href": "tel:+353 838087566",
         "external": false
       }
     ]

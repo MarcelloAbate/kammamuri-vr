@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import s from "./Navbar.module.css";
 import NavbarRoot from "./NavbarRoot";
-import cn from "classnames";
 import SidebarMobile from "./SidebarMobile";
 import { MenuIcon } from "@heroicons/react/outline";
-import navList from "../../../config/navbar.json";
+import navList from "../../../config/nav.json";
+import NavItem from "./NavItem";
 
 const Navbar: FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
@@ -15,7 +15,7 @@ const Navbar: FC = () => {
         <div className={s["inner-root"]}>
           <div className={s.logo}>
             <a href="/">
-              <img src="logo.png" alt="logo" />
+              <img src="logo-white.png" alt="logo" />
             </a>
           </div>
           <nav className={s.nav}>
@@ -35,20 +35,6 @@ const Navbar: FC = () => {
 
       <SidebarMobile isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
     </>
-  );
-};
-
-interface NavItemProps {
-  children?: React.ReactNode;
-  href: string;
-  title: string;
-}
-
-export const NavItem: React.FC<NavItemProps> = ({ href, title }) => {
-  return (
-    <a href={href} className={cn(s["nav-item"])}>
-      {title}
-    </a>
   );
 };
 

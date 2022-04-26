@@ -1,5 +1,5 @@
 .root {
-  @apply bg-white py-8 lg:py-16 relative h-[620px];
+  @apply bg-white py-8 lg:py-16 relative lg:h-[620px];
 }
 
 .side {
@@ -15,7 +15,7 @@
 }
 
 .carousel {
-  @apply h-[620px] lg:absolute lg:w-1/2 right-0 top-0 bottom-0 mt-8 lg:mt-0;
+  @apply lg:absolute lg:w-1/2 right-0 top-0 bottom-0 mt-8 lg:mt-0;
 }
 
 .slide {

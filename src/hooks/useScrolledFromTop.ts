@@ -1,26 +1,26 @@
-import { throttle } from 'lodash'
-import React from 'react'
+import { throttle } from "lodash";
+import React from "react";
 
 function useScrolledFromTop(offset = 100) {
-  const [hasScrolled, setHasScrolled] = React.useState(false)
+  const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = throttle(() => {
-      const { scrollTop } = document.documentElement
-      const scrolled = scrollTop > offset
+      const { scrollTop } = document.documentElement;
+      const scrolled = scrollTop > offset && scrollTop < 600;
 
       if (hasScrolled !== scrolled) {
-        setHasScrolled(scrolled)
+        setHasScrolled(scrolled);
       }
-    }, 200)
+    }, 200);
 
-    document.addEventListener('scroll', handleScroll)
+    document.addEventListener("scroll", handleScroll);
     return () => {
-      document.removeEventListener('scroll', handleScroll)
-    }
-  }, [hasScrolled, offset])
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [hasScrolled, offset]);
 
-  return hasScrolled
+  return hasScrolled;
 }
 
-export default useScrolledFromTop
+export default useScrolledFromTop;

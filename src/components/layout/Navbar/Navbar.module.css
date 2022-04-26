@@ -33,10 +33,6 @@
   @apply flex justify-end items-center space-x-8;
 }
 
-.nav-item {
-  @apply uppercase text-white font-medium transition-colors hover:text-primary relative;
-}
-
 .mobile-button {
   @apply justify-end items-center flex lg:hidden;
 }

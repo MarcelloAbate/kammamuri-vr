@@ -18,7 +18,7 @@ const Footer: FC<FooterProps> = () => {
         <div className={s.root}>
           <div className={s.side}>
             <img className={s.logo} src="logo.png" alt="Logo" />
-            <p className={s.paragraph}>{t("footer-paragraph")}</p>
+            {/* <p className={s.paragraph}>{t("footer-paragraph")}</p> */}
           </div>
 
           <div className={s.sections}>
@@ -39,7 +39,7 @@ const Footer: FC<FooterProps> = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">{t("footer-bottom")}</p>
+          <p className="text-base text-primary xl:text-center">{t("footer-bottom")}</p>
         </div>
       </Container>
     </footer>

@@ -1,6 +1,8 @@
 import React, { Dispatch, Fragment, SetStateAction } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import s from "./SidebarMobile.module.css";
+import navList from "../../../../config/nav.json";
+import NavItem from "../NavItem";
 
 interface SidebarMobileProps {
   isSidebarOpen: boolean;
@@ -35,14 +37,19 @@ const SidebarMobile: React.FC<SidebarMobileProps> = ({ isSidebarOpen, setIsSideb
             <div className={s["content-wrapper"]}>
               <div className={s.header}>
                 <div>
-                  <a href="#">dsdasdsdsadsd</a>
+                  <a href="/">
+                    <img className={s.logo} src="logo.png" alt="Logo" />
+                  </a>
                 </div>
               </div>
               <nav>
-                <ul className={s.nav}></ul>
-                <div className={s["social-nav"]}>
-                  <ul></ul>
-                </div>
+                <ul className={s.nav}>
+                  {navList.map((nav) => (
+                    <span key={nav.title} onClick={() => setIsSidebarOpen(false)}>
+                      <NavItem title={nav.title} href={nav.href} className="text-primary" />
+                    </span>
+                  ))}
+                </ul>
               </nav>
             </div>
           </Transition.Child>

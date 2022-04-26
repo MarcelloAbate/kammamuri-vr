@@ -3,7 +3,7 @@
 }
 
 .feature {
-  @apply p-20 text-white space-y-6;
+  @apply p-20 text-white text-lg space-y-6;
 }
 
 .feature-icon {

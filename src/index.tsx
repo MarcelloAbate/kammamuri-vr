@@ -1,6 +1,6 @@
 import LandingPage from "./pages/LandingPage";
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./styles/index.css";
 
 // i18n configuration import
@@ -13,9 +13,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./styles/swiper.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <LandingPage />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root") as HTMLElement
 );
