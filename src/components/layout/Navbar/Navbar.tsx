@@ -15,7 +15,7 @@ const Navbar: FC = () => {
         <div className={s["inner-root"]}>
           <div className={s.logo}>
             <a href="/">
-              <img src="logo-white.png" alt="logo" />
+              <img src="logo-navbar.png" alt="logo" />
             </a>
           </div>
           <nav className={s.nav}>

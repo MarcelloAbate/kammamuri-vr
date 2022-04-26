@@ -3,5 +3,5 @@
 }
 
 .textarea-wrapper {
-  @apply mt-1 border-b border-gray-300 focus-within:border-primary;
+  @apply mt-1 border-b border-primary-100 focus-within:border-primary-600;
 }

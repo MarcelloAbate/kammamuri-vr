@@ -19,7 +19,7 @@ const Textarea: React.FC<TextareaProps> = ({
   const labelCn = cn(s.label, labelClassName);
   const textareaCn = cn(
     textareaClassName,
-    "block w-full border-0 border-b border-transparent bg-gray-50 focus:border-primary focus:ring-0 sm:text-sm resize-none"
+    "block w-full border-0 border-b border-transparent bg-primary-50 focus:border-primary-600 focus:ring-0 sm:text-sm resize-none"
   );
 
   return (

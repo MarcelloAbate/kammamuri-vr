@@ -39,7 +39,7 @@ const Footer: FC<FooterProps> = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-primary xl:text-center">{t("footer-bottom")}</p>
+          <p className="text-base text-primary-600 xl:text-center">{t("footer-bottom")}</p>
         </div>
       </Container>
     </footer>

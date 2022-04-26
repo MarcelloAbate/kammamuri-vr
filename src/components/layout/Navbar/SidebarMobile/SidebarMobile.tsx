@@ -46,7 +46,7 @@ const SidebarMobile: React.FC<SidebarMobileProps> = ({ isSidebarOpen, setIsSideb
                 <ul className={s.nav}>
                   {navList.map((nav) => (
                     <span key={nav.title} onClick={() => setIsSidebarOpen(false)}>
-                      <NavItem title={nav.title} href={nav.href} className="text-primary" />
+                      <NavItem title={nav.title} href={nav.href} className="text-primary-600" />
                     </span>
                   ))}
                 </ul>

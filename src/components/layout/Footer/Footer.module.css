@@ -23,7 +23,7 @@
 }
 
 .section-title {
-  @apply font-semibold text-primary tracking-wider uppercase;
+  @apply font-semibold text-primary-600 tracking-wider uppercase;
 }
 
 .link {

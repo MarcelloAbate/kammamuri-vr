@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import s from "./HalfCarousel.module.css";
-import { Navigation, Pagination, A11y, Autoplay } from "swiper";
+import { Navigation, Pagination, A11y, Autoplay, Swiper as SwiperAction } from "swiper";
 import { useTranslation } from "react-i18next";
 import config from "../../../config/half-carousel.json";
 import Container from "../../layout/Container";
@@ -13,30 +13,35 @@ interface HalfCarouselProps {
 
 const HalfCarousel: React.FC<HalfCarouselProps> = () => {
   const { t } = useTranslation();
+  const [businessTextIndex, setBusinessTextIndex] = React.useState(0);
 
   const phrasesText = config.phrases.map((phrase) => t(phrase));
   const companyText = config.images.map((image) => t(image.business));
 
+  const onSlideChange = (swiper: SwiperAction) => {
+    setBusinessTextIndex(swiper.realIndex);
+  };
+
   return (
     <section id="k-verse" className={s.root}>
       <Container>
+        <div>
+          <TextTransition text={phrasesText} />
+        </div>
         <div className={s.side}>
           <h3>{t("half-carousel-title")}</h3>
-          <p>
-            <TextTransition text={phrasesText} />
-          </p>
 
           <p>{t("half-carousel-paragraph")}</p>
-
-          <p>
-            {t("half-carousel-company")}
-            <TextTransition inline text={companyText} delay={5000} />
-          </p>
+        </div>
+        <div>
+          {t("half-carousel-business")}
+          <TextTransition inline text={companyText} customIndex={businessTextIndex} />
         </div>
       </Container>
 
       <div className={s.carousel}>
         <Swiper
+          onSlideChange={onSlideChange}
           className="h-[620px]"
           modules={[Navigation, Pagination, A11y, Autoplay]}
           navigation
@@ -59,19 +64,21 @@ const HalfCarousel: React.FC<HalfCarouselProps> = () => {
 
 interface TextTransitionProps {
   text: string[];
+  customIndex?: number;
   delay?: number;
   inline?: boolean;
 }
 
-const TextTransition: React.FC<TextTransitionProps> = ({ text, delay = 3000, inline = false }) => {
+const TextTransition: React.FC<TextTransitionProps> = ({ text, customIndex, delay = 3000, inline = false }) => {
   const [index, setIndex] = React.useState(0);
 
   React.useEffect(() => {
+    if (customIndex !== undefined) return;
     const intervalId = setInterval(() => setIndex((index) => index + 1), delay);
     return () => clearTimeout(intervalId);
-  }, [delay]);
+  }, [delay, customIndex]);
 
-  return <ReactTextTransition inline={inline} text={text[index % text.length]} />;
+  return <ReactTextTransition inline={inline} text={text[customIndex ?? index % text.length]} />;
 };
 
 export default HalfCarousel;

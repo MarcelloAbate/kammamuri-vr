@@ -19,7 +19,7 @@ const TextInput: React.FC<TextInputProps> = ({
   const labelCn = cn(s.label, labelClassName);
   const inputCn = cn(
     inputClassName,
-    "block w-full border-0 border-b border-transparent bg-gray-50 focus:border-primary focus:ring-0 sm:text-sm"
+    "block w-full border-0 border-b border-transparent bg-primary-50 focus:border-primary-600 focus:ring-0 sm:text-sm"
   );
 
   return (
