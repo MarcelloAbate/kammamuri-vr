@@ -7,11 +7,11 @@
 }
 
 .phrases {
-  @apply text-base text-primary-600 font-semibold uppercase pt-6 pb-2;
+  @apply text-lg text-primary-600 font-semibold uppercase pt-8 pb-8;
 }
 
 .business-pre {
-  @apply text-base text-gray-400 font-semibold uppercase pt-6;
+  @apply text-base text-gray-400 font-semibold uppercase pt-14;
 }
 
 .business {
