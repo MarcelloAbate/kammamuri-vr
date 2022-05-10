@@ -1,79 +1,43 @@
 {
   "images": [
     {
-      "imgUrl": "/images/Isola1.png",
+      "imgUrl": "/images/ScreenShot00000.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola2.png",
+      "imgUrl": "/images/ScreenShot00001.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola3.png",
+      "imgUrl": "/images/ScreenShot00002.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola4.png",
+      "imgUrl": "/images/ScreenShot00003.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola5.png",
+      "imgUrl": "/images/ScreenShot00004.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola8.png",
+      "imgUrl": "/images/ScreenShot00005.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola9.png",
+      "imgUrl": "/images/ScreenShot00008.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola10.png",
+      "imgUrl": "/images/ScreenShot00009.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola11.png",
+      "imgUrl": "/images/ScreenShot00010.png",
       "altText": "alt-text-carousel-1"
     },
     {
-      "imgUrl": "/images/isola12.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola13.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola14.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola15.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola16.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola17.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola18.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola19.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola20.png",
-      "altText": "alt-text-carousel-1"
-    },
-    {
-      "imgUrl": "/images/isola21.png",
+      "imgUrl": "/images/ScreenShot00011.png",
       "altText": "alt-text-carousel-1"
     }
   ],
